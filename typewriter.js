@@ -171,7 +171,7 @@ function typewriter() {
     setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Researche" }, delay +  57000 * seconds);
     setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Researcher" }, delay +  58000 * seconds);
 
-    setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Researche" }, delay + 621000 * seconds);
+    setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Researche" }, delay + 62000 * seconds);
     setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Research" }, delay +  63000 * seconds);
     setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Researc" }, delay +  64000 * seconds);
     setTimeout(function() { txt.innerHTML = "Hi, I'm Davey; Resear" }, delay +  65000 * seconds);

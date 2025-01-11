@@ -1,0 +1,472 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="typewriter.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="name">
+                <a href="index.html">David Dyer</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="qualifications.html">Qualifications</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="qual-content">
+            <!-- <br>
+            <br>
+            <ul class="header">
+                <li id="main-text">Hi, I'm Davey; Casual Academic</li>
+                <li id="blinker">|</li>
+            </ul>
+             <p id="main-text">Hi, I'm Davey; Casual Academic</p>
+             <p id="lorem" style="text-align: center;">
+                <button onclick="switchToAcad()">Academic Portfolio</button>
+                <button onclick="switchToDev()">Development Portfolio</button>
+            </p>
+            <br>
+            <br> -->
+            <div class="switch-container">
+                <!-- <div class="toggle">
+                    <button class="toggle-btn">Academic Portfolio</button>
+                    <button class="toggle-btn" id="right-btn">Development Portfolio</button>
+                </div> -->
+                <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio" checked="" onclick="switchToAcad()">
+                      <span class="name">Academic Portfolio</span>
+                    </label>                 
+                    <label class="radio">
+                      <input type="radio" name="radio" onclick="switchToDev()">
+                      <span class="name">Development Portfolio</span>
+                    </label>
+                  </div>
+                <div id="switch-acad">
+                    <table class="academic-table">
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">5.00</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Application Development with .NET</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td class="tag" id="clickable">Spring 2022</td>
+                                            <td class="tag" id="clickable">Spring 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tag" id="clickable">July 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.91</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Programming 2</span><br><span style="color: grey">Lecture/Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2023</td>
+                                            <td class="tag" id="clickable">Spring 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="studio"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.88</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Software Development Studio</span><br><span style="color: grey">Studio</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="tutorial"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.87</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Game Design Methodologies</span><br><span style="color: grey">Tutorial</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="tutorial"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.79</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Introduction to Information Systems</span><br><span style="color: grey">Tutorial</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Spring 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.75</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Cloud Computing & Software as a Service</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td>ss</td>
+                                            <td>ss</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.71</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Programming Fundamentals</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2023</td>
+                                            <td class="tag" id="clickable">Spring 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="tutorial"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.67</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Web Systems</span><br><span style="color: grey">Tutorial</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.67</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Data Structures & Algorithms</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Autumn 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="tutorial"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.60</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Fundamentals of Interaction Design</span><br><span style="color: grey">Tutorial</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Autumn 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.60</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Programming 1</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2023</td>
+                                            <td class="tag" id="clickable">Spring 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <p id="corner-number">4.54</p>
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Introduction to Computer Games Development</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="lab"></div><div class="right" style="padding-left: 0;">                                  
+                                    <!-- <p id="corner-number">???</p> -->
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Computer Graphics</span><br><span style="color: grey">Computer Lab</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Autumn 2024</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                            <td>
+                                <div class="bar" style="width: 100%; height: 100%; margin: auto"><div class="left" id="tutorial"></div><div class="right" style="padding-left: 0;">                                  
+                                    <!-- <p id="corner-number">???</p> -->
+                                    <p style="padding-left: 10; margin-bottom: 0;"><span style="font-size: 1.75rem;">Database Fundamentals</span><br><span style="color: grey">Tutorial</span></p>
+                                    <table class="sem-table">
+                                        <tr>
+                                            <td colspan="2" class="tag" id="clickable">Autumn 2023</td>
+                                        </tr>
+                                        <tr style="opacity: 0;">
+                                            <td class="tag" id="clickable">Autumn 2024</td>
+                                            <td class="tag" id="clickable">Spring 2024</td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="switch-dev">
+                    <!-- <div class="bar" style="margin: 20 150 -70 150;">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="bar" style="margin: 100 150 -70 150;">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="bar" style="margin: 100 150 -50 150;">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div> -->
+                    
+                    
+                    <!-- SWITCH THESE 2 DISPLAYS BACK WHEN READY -->
+                    <div class="under-construction">
+                        <div id="construction-img">
+                            <div id="inner-border"></div>
+                            <p>UNDER CONSTRUCTION</p>
+                        </div>
+
+                        <p id="message">Check back soon.</p>
+                    </div>
+                    <div class="flip-cards" style="display:none">
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img src="/image/eyes.png" class="port-image"/>
+                                    <div class="front-content">
+                                        <h2>UTSSAT</h2>
+                                        <p>Timetabling System for UTS Academics<br>Developed in blabla</p>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="image-block">
+                                        <img id="unavailable" src="/image/github.png"/>
+                                        <img id="unavailable" src="/image/github.png"/>
+                                    </div>
+                                    <div class="remainder">
+                                        <table class="key-table">
+                                            <tr>
+                                                <td>C#</td>
+                                                <td>ASP.NET</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HTML</td>
+                                                <td>CSS</td>
+                                            </tr>
+                                        </table>
+                                        <p>Key Features</p>
+                                        <ul class="key-features">
+                                            <li>Realtime display of ongoing games</li>
+                                            <li>API calls from NRL.com</li>
+                                            <li>idk lol</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img src="/image/eyes.png" class="port-image"/>
+                                    <div class="front-content">
+                                        <h2>nrlladder.live</h2>
+                                        <p>Realtime ladder for the National Rugby League</p>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="image-block">
+                                        <a href="https://github.com/DaveyD24/live-ladder" target="_blank"><img src="/image/github.png"/></a>
+                                        <a href="https://nrlladder.live/" target="_blank"><img src="/image/github.png"/></a>
+                                    </div>
+                                    <div class="remainder">
+                                        <table class="key-table">
+                                            <tr>
+                                                <td>C#</td>
+                                                <td>ASP.NET</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HTML/CSS</td>
+                                                <td>Javascript</td>
+                                            </tr>
+                                        </table>
+                                        <p>Key Features</p>
+                                        <ul class="key-features">
+                                            <li>Realtime display of ongoing games</li>
+                                            <li>API calls from NRL.com</li>
+                                            <li>idk lol</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img src="/image/eyes.png" class="port-image"/>
+                                    <div class="front-content">
+                                        <h2>Prog2Student</h2>
+                                        <p>Original lecture and tutorial material for Programming 2 students in spring 2024.</p>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="image-block">
+                                        <img src="/image/github.png"/>
+                                        <img src="/image/github.png"/>
+                                    </div>
+                                    <div class="remainder">
+                                        <table class="key-table">
+                                            <tr>
+                                                <td>Java</td>
+                                                <td>JavaFX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Python</td>
+                                                <td>Tkinter</td>
+                                            </tr>
+                                        </table>
+                                        <p>Key Features</p>
+                                        <ul class="key-features">
+                                            <li>Realtime display of ongoing games</li>
+                                            <li>API calls from NRL.com</li>
+                                            <li>idk lol</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p id="whole-quote"><span style="color: purple; font-size: 3rem; position: absolute; margin-top: -15; margin-left: -25;">"</span>
+                <span id="quote">Inspirational quote about how based I am</span>
+                <span style="color: purple; font-size: 3rem; position: absolute; margin-top: -15; margin-left: 10;">"</span>
+            </p>
+        </div>
+    </body>
+</html>
+
+<script>
+
+    document.body.onload = setInitialQuote();   
+
+    function switchToAcad() {
+        const acad = document.getElementById("switch-acad");
+        const dev = document.getElementById("switch-dev");
+
+    $("#switch-dev").fadeOut(1000);
+        setTimeout(function() {
+            dev.style.display = "none";
+            acad.style.display = "unset";
+
+    }, 1000)
+    $("#switch-acad").fadeIn(1000);
+    }
+
+    function switchToDev() {
+        const acad = document.getElementById("switch-acad");
+        const dev = document.getElementById("switch-dev");
+
+    $("#switch-acad").fadeOut(1000);
+        setTimeout(function() {
+            acad.style.display = "none";
+            dev.style.display = "unset";
+
+    }, 1000)
+    $("#switch-dev").fadeIn(1000);
+
+        // acad.style.display = "none";
+        // dev.style.display = "unset";
+    }
+</script>
